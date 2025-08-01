@@ -1,22 +1,24 @@
 # WebDesignClass
 
-This project contains a simple HTML document for a web design class.
+This repository contains HTML files and assets for a web design class. It is intended for learning and practicing basic web development concepts.
 
-## Files
+## Contents
 
-- [class_1.html](class_1.html): Main HTML file demonstrating basic HTML elements such as headings, paragraphs, lists, and links.
-
-## Features
-
-- Multiple heading levels (`<h1>` to `<h6>`)
-- Paragraphs with sample text
-- Unordered and ordered lists
-- External link example
+- `class_1.html` — HTML file for the first class session.
+- `class_2.html` — HTML file for the second class session.
+- `messi.webp` — Image asset used in the HTML files.
+- `readme.md` — This documentation file.
 
 ## Usage
 
-Open [class_1.html](class_1.html) in your web browser to view the page.
+Open the HTML files in your web browser to view the web pages. You can edit these files to experiment with HTML, CSS, and images as part of your learning process.
+
+## Getting Started
+
+1. Clone or download this repository to your local machine.
+2. Open `class_1.html` or `class_2.html` in your preferred web browser.
+3. Edit the files as needed to practice web design skills.
 
 ## License
 
-This project is for educational purposes.
+This project is for educational purposes only.
