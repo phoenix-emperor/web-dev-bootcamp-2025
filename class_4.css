@@ -1,0 +1,17 @@
+ul {
+  background-color: yellow;
+  color: red;
+  font-family: cursive;
+}
+
+.list-item {
+  background-color: lightblue;
+  color: darkblue;
+  font-family: Arial, sans-serif;
+}
+
+#safari {
+  background-color: lightgreen;
+  color: darkgreen;
+  font-family: Verdana, sans-serif;
+}
