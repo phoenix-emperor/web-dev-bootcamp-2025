@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Flexbox Image Gallery</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 20px;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item {
+        flex: 1 1 calc(25% - 20px); /* 4 images per row on large screens */
+        max-width: calc(25% - 20px);
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Tablet */
+      @media (max-width: 768px) {
+        .gallery-item {
+          flex: 1 1 calc(33.333% - 20px);
+          max-width: calc(33.333% - 20px);
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 480px) {
+        .gallery-item {
+          flex: 1 1 calc(50% - 20px);
+          max-width: calc(50% - 20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Flexbox Image Gallery</h1>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/120/300" alt="Image 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/121/300" alt="Image 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/122/300" alt="Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/123/300" alt="Image 4" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/124/300" alt="Image 5" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/125/300" alt="Image 6" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/126/300" alt="Image 7" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/127/300" alt="Image 8" />
+      </div>
+    </div>
+  </body>
+</html>
