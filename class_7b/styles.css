@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d3cece;
+}
+
+.relative {
+  background: red;
+  position: relative;
+  /* margin-top: 20px; */
+  top: 0px;
+  left: 50px;
+  /* bottom: 10px; */
+  /* right: 100px; */
+}
+
+.absolute {
+  background: blue;
+  position: absolute;
+  top: 290px;
+  left: 50px;
+}
+
+.fixed {
+  background: green;
+  position: fixed;
+  top: 400px;
+  right: 100px;
+}
+
+.sticky {
+  background: yellow;
+  position: sticky;
+  top: 500px;
+}

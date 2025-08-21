@@ -2,27 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Simple Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Club Registration</title>
+    <style>
+      /* Descendant selector */
+      form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      /* Child selector */
+      form > div {
+        margin-bottom: 15px;
+      }
+
+      /* Adjacent sibling selector */
+      label + input {
+        border: 2px solid #888;
+        padding: 5px;
+        width: 20%;
+      }
+
+      /* General sibling selector */
+      input[type="checkbox"] ~ label {
+        font-weight: normal;
+        color: #333;
+      }
+
+      /* Grouping selectors */
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        border-radius: 5px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hi, I'm Ada!</h1>
+    <h1>Join Our Book Club 📚</h1>
+    <form action="#" method="post">
+      <div>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required />
+      </div>
 
-    <img src="/messi.webp" alt="Profile Picture" width="150" />
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
 
-    <p>
-      I am learning HTML and this is my first web page. I love reading, coding,
-      and playing chess!
-    </p>
+      <div>
+        <label for="favoriteBook">Favorite Book</label>
+        <input type="text" id="favoriteBook" name="favoriteBook" />
+      </div>
 
-    <h2>My Hobbies</h2>
-    <ul>
-      <li>Reading Sci-Fi</li>
-      <li>Building mini websites</li>
-      <li>Watching anime</li>
-    </ul>
+      <div>
+        <label for="message">Why do you want to join?</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
 
-    <h2>Connect with Me</h2>
-    <p>Check out my favorite website:</p>
-    <a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+      <div>
+        <input type="checkbox" id="newsletter" name="newsletter" />
+        <label for="newsletter">Sign me up for the monthly newsletter</label>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
   </body>
 </html>
