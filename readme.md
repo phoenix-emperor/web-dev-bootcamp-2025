@@ -1,6 +1,6 @@
 # WebDesignClass
 
-This repository contains HTML files, CSS stylesheets, and assets for a web design class. It is intended for learning and practicing basic web development concepts, including HTML structure, CSS styling, Flexbox layouts, CSS positioning, personal portfolios, and working with images.
+This repository contains HTML files, CSS stylesheets, and assets for a web design class. It is intended for learning and practicing fundamental web development concepts, including HTML structure, CSS styling, Flexbox layouts, CSS positioning, personal portfolios, and working with images.
 
 ## Contents
 

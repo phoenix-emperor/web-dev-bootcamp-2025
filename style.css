@@ -1,0 +1,136 @@
+/* ===== STYLE GUIDE ===== */
+:root {
+  --primary: #1e3a8a; /* Navy Blue */
+  --secondary: #2563eb; /* Blue */
+  --accent: #f59e0b; /* Amber */
+  --bg: #f3f4f6; /* Light Gray */
+  --text: #111827; /* Near Black */
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== HEADER (fixed) ===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== SIDEBAR (sticky) ===== */
+.sidebar {
+  position: sticky;
+  top: 4rem; /* sticks right below header */
+  width: 200px;
+  float: left;
+  padding: 1rem;
+  height: max-content;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  color: #1d4ed8; /* darker blue */
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  margin-left: 220px; /* to make space for sidebar */
+  padding: 6rem 2rem 4rem; /* account for header + footer */
+}
+
+/* ===== PROFILE CARD (relative container) ===== */
+.profile-card {
+  position: relative;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem 1rem;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 50px;
+}
+
+/* Avatar (absolute inside relative container) */
+.avatar {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.profile-card h2 {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.profile-card button {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.profile-card button:hover {
+  background: var(--primary);
+}
+
+/* ===== FOOTER (absolute) ===== */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: var(--accent);
+  color: white;
+  font-weight: bold;
+}
